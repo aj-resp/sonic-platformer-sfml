@@ -1,120 +1,134 @@
-# Sonic Platformer SFML Game
+# 🦔 Sonic Platformer — C++ SFML Game
 
-A 2D Sonic-inspired platformer game developed in C++ using SFML.  
-The game features multiple levels, enemy AI, collectibles, boss fights, power ups, sound effects, and different environments inspired by classic Sonic games.
+A  2D Sonic the Hedgehog platformer built in **C++ using SFML**.  
+Developed as an Object-Oriented Programming course project featuring multiple levels, enemy AI, boss fights, collectibles, and a full audio system.
 
-Note: Some large assets and extra files were not uploaded because of GitHub space limitations. Only the main required files for the project are included here.
+> ⚠️ **Note:** Some large asset files were excluded from this repo due to GitHub's size limitations. All core source files and required assets are included.
 
 ---
 
-## Features
+## 📸 Screenshots
 
-- Multiple playable levels
-- Sonic, Tails, and Knuckles characters
-- Enemy AI and moving enemies
-- Boss fight level
-- Ring collection system (green for health, black for powerup, "p" for count of power ups)
-- Health and score system
-- Power ups and collectibles
-- Different themed maps and environments
-- Sound effects and background music
-- Platformer movement and collision system
-- knuckles(breaks walls)
-- Sonic (fast movement)
-- Tails (fly)  
----
-
-## Screenshots
-
-### Main Screen
-
+### Main Menu
 ![Main Screen](images/SonicMainScreen.png)
 
----
-
-### Level 1
-
+### Level 1 — Snow Zone
 ![Level 1](images/SonicLevel1.png)
 
----
-
-### Level 2
-
+### Level 2 — Sky Zone
 ![Level 2](images/SonicLevel2.png)
 
----
-
-### Level 3
-
+### Level 3 — Dark Zone
 ![Level 3](images/SonicLevel3.png)
 
----
-
-### Boss Level
-
+### Boss Level — Fire Zone
 ![Boss Level](images/SonicBossLevel.png)
 
----
-
 ### Level Transition Screen
+![Transition](images/SonicLevelChangingScreen.png)
 
-![Transition Screen](images/SonicLevelChangingScreen.png)
-
----
-
-### Debug / Console Output
-
+### Debug Console Output
 ![Terminal](images/SonicTerminal.png)
 
 ---
 
-## Controls
+## 🎮 Features
 
-- Up Arrow → Jump
-- Down Arrow → Crouch
-- Z → Change character
-- X → Use character special ability
-- Collect rings and power ups
-- Avoid spikes and enemies
+- **4 Levels** — Snow, Sky, Dark, and Fire/Boss zones
+- **3 Playable Characters** — each with unique abilities:
+  - 🔵 **Sonic** — fast movement and spin dash
+  - 🦊 **Tails** — can fly using twin tails
+  - 👊 **Knuckles** — can break walls
+- **Enemy AI** — multiple enemy types that move and attack
+- **Boss Fight** — Dr. Eggman boss battle in the final level
+- **Ring Collection System**
+  - 🟢 Green rings → restore health
+  - ⚫ Black rings → activate power up
+  - **P counter** → tracks power up count
+- **HUD** — real-time Health, Score, Timer, and Power Up display
+- **Level Transitions** — animated screen between levels
+- **Sound Effects & Background Music** — per level audio
+- **Collision System** — full platformer physics with spikes, walls, and floors
+- **Leaderboard & Save System**
 
 ---
 
-## Requirements
+## 🕹️ Controls
 
-- Visual Studio
-- SFML Library
+| Key | Action |
+|-----|--------|
+| ⬅️ ➡️ Arrow Keys | Move left / right |
+| ⬆️ Arrow Key | Jump |
+| ⬇️ Arrow Key | Crouch |
+| **Z** | Switch character |
+| **X** | Use character's special ability |
+| **Escape** | Pause / Quit |
+| **Enter** | Confirm in menus |
+| **Y / N** | Yes / No prompts |
+
+---
+
+## 🛠️ Requirements
+
 - Windows OS
+- Visual Studio (2019 or later recommended)
+- [SFML 2.x](https://www.sfml-dev.org/) library configured in Visual Studio
 
 ---
 
-## How To Run
+## 🚀 How to Run
 
-1. Install SFML library
-2. Open `Sonic.vcxproj` in Visual Studio
-3. Build the project
-4. Run the game
+1. Install **SFML** and link it in Visual Studio  
+   → [SFML Setup Guide for Visual Studio](https://www.sfml-dev.org/tutorials/2.6/start-vc.php)
+2. Clone this repository:
+   ```
+   git clone https://github.com/aj-resp/sonic-platformer-sfml.git
+   ```
+3. Open `Sonic.vcxproj` in Visual Studio
+4. Build the project (**Ctrl + Shift + B**)
+5. Run the game (**F5**)
 
-Make sure the `Data` folder remains in the same directory so textures, sounds, and assets load properly.
+> ⚠️ Make sure the `Data/` folder stays in the **same directory** as the executable so all textures, sounds, and level maps load correctly.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
-```text
+```
 sonic-platformer-sfml/
 │
-├── Data/
-├── images/
+├── Data/                   # Game assets (sprites, audio, level maps, backgrounds)
+├── images/                 # Screenshots for README
 │
-├── Source.cpp
-├── Character.h
-├── player.h
-├── enemi.h
-├── SoundManager.h
+├── Source.cpp              # Main game loop and level management
+├── Character.h             # Base character class
+├── player.h                # Player movement, physics, and input
+├── enemi.h                 # Enemy AI and behavior
+├── SoundManager.h          # Audio system
 │
-├── Sonic.vcxproj
-├── Sonic.vcxproj.filters
+├── Sonic.vcxproj           # Visual Studio project file
+├── Sonic.vcxproj.filters   # VS filters
 │
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
+
+---
+
+## 👨‍💻 Authors
+
+| Student ID |
+|------------|
+| 24i-0569   |
+| 24i-0720   |
+
+Developed as part of an **Object-Oriented Programming (OOP)** course project.
+
+---
+
+## 📄 License
+
+This project is for educational purposes only.  
+Sonic the Hedgehog and related characters are trademarks of **SEGA**.  
+All game assets belong to their respective owners.
