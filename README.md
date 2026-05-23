@@ -12,10 +12,10 @@ Developed as an Object-Oriented Programming course project featuring multiple le
 ### Main Menu
 ![Main Screen](images/SonicMainScreen.png)
 
-### Level 1 — Snow Zone
+### Level 1 — Sky Zone
 ![Level 1](images/SonicLevel1.png)
 
-### Level 2 — Sky Zone
+### Level 2 — Snow Zone
 ![Level 2](images/SonicLevel2.png)
 
 ### Level 3 — Dark Zone
